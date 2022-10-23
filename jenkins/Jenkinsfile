@@ -21,15 +21,13 @@ pipeline {
         }
         stage('Manual Approval') {
             steps {
-                //sh './jenkins/scripts/deliver.sh'
                 input message: 'Lanjutkan ke tahap Deploy? (Klik "Proceed" untuk melanjutkan eksekusi pipeline ke tahap Deploy, Klik "Abort" untuk menghentikan eksekusi pipeline)'
-                //sh './jenkins/scripts/kill.sh'
             }
         }
         stage('Deploy') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
-                sh 'sleep 1m'
+                sh 'sleep 60'
                 sh './jenkins/scripts/kill.sh'
             }
         }
