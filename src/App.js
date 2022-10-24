@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Selamat datang di Dicoding Submission</h1>
         </header>
         <p className="App-intro">
-          Perubahan ini dilakukan untuk memenuhi saran-saran yang diberikan untuk menyelesaikan kelas Belajar implementasi CI/CD
+          Perubahan ini dilakukan untuk memenuhi saran-saran yang diberikan untuk menyelesaikan kelas Belajar implementasi CI/CD.
         </p>
       </div>
     );
